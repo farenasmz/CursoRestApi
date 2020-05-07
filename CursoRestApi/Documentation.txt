@@ -1,0 +1,18 @@
+MIGRATIONS: python manage.py makemigrations polls
+Create tables: python manage.py sqlmigrate polls 0001 (0001_Initial.py)
+"Commit" del sqlmigrate: python manage.py migrate
+ABRIR CONSOLA INTERACTIVA: python manage.py shell
+--- Consola interactiva
+>>> from polls.models import Choice, Question
+>>> Question.objects.all()
+<QuerySet []>
+>>> from django.utils import timezone
+>>> q = Question(question_text = "Pregunta 1", pub_date = timezone.now())
+>>>
+ Guardar: q.save()
+ First Or default : q.question_text
+ - Create super user: python manage.py createsuperuser
+ - python manage.py runserver
+
+ ---------------------API--------------
+ - Crear migración de los modelos de elemente: python manage.py makemigrations
