@@ -52,7 +52,6 @@
     <Compile Include="CursoRestApi\wsgi.py" />
     <Compile Include="polls\admin.py" />
     <Compile Include="polls\apps.py" />
-    <Compile Include="polls\migrations\0001_initial.py" />
     <Compile Include="polls\migrations\__init__.py" />
     <Compile Include="polls\models.py">
       <SubType>Code</SubType>
